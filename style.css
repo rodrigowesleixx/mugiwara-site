@@ -1,0 +1,146 @@
+/* === ESTILO GERAL === */
+body {
+    font-family: Arial, sans-serif;
+    background: color #f0f8ff; /*azul clarinho, lembra o mar */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* === CABEÇALHO === */
+header { 
+    background-color: #f7c501; /* cor do chapeú de palha */
+    padding: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+/* === LOGO === */ 
+.logo {
+    width: 120px;  /*controla o tamanho da logo */
+    height: auto; /* mantém a proporção da imagem */
+}
+
+/*=== TÍTULO ===*/
+header h1 {
+    margin-top:10px; 
+    color: #222;
+    
+}
+
+/* === SEÇÃO PRINCIPAL === */ 
+main {
+    padding: 20px;
+} 
+
+/* === LISTA DE PERSONAGENS === */
+.crew ul, #crew-list {
+    list-style: none;
+    padding: 0;
+}
+.crew li {
+    background-color: #ffe680;
+    margin: 8px;
+    padding: 10px;
+    border-radius:10px;
+    box-shadow: 2px 2px 5px rgba(0,0, 0, 0.1);
+}
+/* === RODAPÉ === */
+footer {
+    background-color: #222; 
+    color: white;
+    padding: 15px;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain; /* mantém a imagem inteira */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #fffbe6; /* harmoniza com o card */
+}
+
+/* === ESTILO DOS CARDS DE PERSONAGENS === */
+.crew-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: stretch; /* garante que todos os cards tenham a mesma altura */
+
+}
+
+.card {
+    background-color:#fffbe6;
+    border: 2px solid #ffcc00;
+    border-radius: 15px;
+    width:250px;
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+
+    display: flex;  /*ativa flexbox dentro do card */
+    flex-direction: column; /* organiza os elementos verticalmente */
+    justify-content: flex-start; /* mantém o conteúdo do topo */
+}
+/* Botões estilo moderno */
+.show-more {
+    background-color: #ffcc00;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.show-more:hover {
+    background-color: #ffdd33;
+}
+
+/* Extra info estilo elegante */
+.extra-info {
+    background-color: #fff3cc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Card com sombra suave e hover profissional */
+.card {
+    background-color: #fffbe6;
+    border: 2px solid #ffcc00;
+    border-radius: 15px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+
+/* === RESPONSAVIDADE (funcionalidade no celular) === */
+@media (max-width: 600px) {
+.logo { 
+    width: 80px; /* diminui mais a logo no celular */    
+}
+
+header h1{
+    font-size:18px;
+
+}
+}
